@@ -1,0 +1,116 @@
+@import url("httpps://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+*{
+    margin: 0;
+}
+body{
+    width: 375px;
+    height: 100vh;
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Red Hat Display",sans-serif;
+}
+section{
+    width: 92%;
+    height: 582px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+section header img{
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.Order_Summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 35px;
+}
+p{
+    color: grey;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.4;
+    width: 93%;
+}
+.plan{
+    background-color: hsl(225, 100%, 96%);
+    width: 100%;
+    height: 85px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.plan img{
+    margin-left: 18px;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+}
+.title-plan{
+    color: black;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.change-plan-btn{
+    color: rgb(114, 5, 204);
+    text-decoration: underline;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.change-plan-btn:hover{
+    filter: opacity(70%);
+    text-decoration: none;
+}
+.payment-btn{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 38px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0px 8px 4px hsl(245,75%,85%);
+}
+.payment-btn:hover{
+    filter: opacity(70%);
+    box-shadow: 5px 9px 10px hsl(245,75%,88%);
+}
+.cancel-btn{
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    color: grey;
+    cursor: pointer;
+}.cancel-btn:hover{
+    color: hsl(223,47%,23%);;    
+}
+@media (min-width: 376px){
+    body{
+        width: 100vw;
+        background-image: url("./images/pattern-background-desktop.svg");
+    }
+    section{
+        width: 375px;
+    }
+    .change-plan-btn{
+        margin-left: 50px;
+    }
+}
